@@ -1,0 +1,282 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+/* Main header */
+.resume-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.name-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+}
+
+.position-title {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Contact card */
+.contact-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    border-top: 5px solid #667eea;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+    .contact-item:hover {
+        background: #f8f9ff;
+        transform: translateX(5px);
+    }
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Card */
+.section-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    border-left: 5px solid #667eea;
+    transition: transform 0.3s ease;
+}
+
+    .section-card:hover {
+        transform: translateY(-5px);
+    }
+
+.section-title {
+    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid #e2e8f0;
+    position: relative;
+}
+
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+
+/* Time line - Experience */
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+    .timeline-item:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+    }
+
+    .timeline-item:after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: 17px;
+        width: 2px;
+        height: calc(100% + 10px);
+        background: #e2e8f0;
+    }
+
+    .timeline-item:last-child:after {
+        display: none;
+    }
+
+.timeline-date {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+    color: #2d3748;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+    color: #718096;
+    margin-bottom: 0;
+}
+
+/* Skill */
+.skill-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: #2d3748;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    margin: 0.3rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(253, 160, 133, 0.2);
+    transition: all 0.3s ease;
+}
+
+    .skill-tag:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(253, 160, 133, 0.3);
+    }
+
+/* Projects */
+.project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+    .project-card:hover {
+        border-color: #667eea;
+        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.1);
+    }
+
+.project-title {
+    color: #2d3748;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-badge {
+    background: #edf2f7;
+    color: #4a5568;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Worl experience */
+.experience-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #f1f5ff 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+    .experience-card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(to bottom, #667eea, #764ba2);
+    }
+
+.company-name {
+    color: #2d3748;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.job-title {
+    color: #667eea;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Active media */
+@media (max-width: 768px) {
+    .name-title {
+        font-size: 2.5rem;
+    }
+
+    .position-title {
+        font-size: 1.2rem;
+    }
+
+    .section-card {
+        padding: 1.5rem;
+    }
+
+    .contact-card {
+        margin-top: 1rem;
+    }
+}
+
+/* Print */
+@media print {
+    .resume-header {
+        background: #667eea !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .section-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .contact-card {
+        box-shadow: none;
+    }
+
+    .skill-tag, .tech-badge {
+        background: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact;
+    }
+}

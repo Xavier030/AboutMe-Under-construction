@@ -1,0 +1,16 @@
+{
+  "name": "aboutme-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'No server needed for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
