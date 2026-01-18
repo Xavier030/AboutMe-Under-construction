@@ -1,76 +1,144 @@
-﻿<html>
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects - Li Shiyun</title>
+    <!-- Projects CSS -->
+    <link rel="stylesheet" href="css/projects-style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
   <body>
-    <div class="section-card">
-      <h2 class="section-title"><i class="fas fa-code me-2"></i> Projects</h2>
+    <!-- Back to Home -->
+    <a href="index.html" class="back-home">
+      <i class="fas fa-arrow-left"></i> Back to Home
+    </a>
 
-      <div class="project-card">
-        <h3>Travel Booking Portal</h3>
+    <div class="projects-container">
+      <!-- Projects Header -->
+      <div class="projects-header">
+        <h1>My Projects</h1>
         <p>
-          Developed a full-featured travel booking portal with user
-          authentication, package management, and a responsive front-end.
+          Showcasing my technical skills and development experience through
+          practical projects
         </p>
-        <div class="tech-stack">
-          <span class="tech-badge">C#</span>
-          <span class="tech-badge">MySQL</span>
-          <span class="tech-badge">JavaScript</span>
-          <span class="tech-badge">HTML/CSS</span>
-          <span class="tech-badge">Entity Framework</span>
+      </div>
+
+      <!-- Projects Stats -->
+      <div class="projects-stats">
+        <div class="stat-card">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Projects Completed</span>
         </div>
-        <div class="project-actions">
-          <a href="https://travel-booking-portal.onrender.com" target="_blank"
-            >View Website</a
-          >
-          |
-          <a
-            href="https://github.com/Xavier030/Travel-Booking-Portal"
-            target="_blank"
-            >View Code</a
-          >
+        <div class="stat-card">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Technologies Used</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Full-Stack</span>
+          <span class="stat-label">Development Focus</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Responsive Design</span>
         </div>
       </div>
 
-      <div class="project-card">
-        <h3>Thread Project</h3>
-        <p>
-          Bootstrapped and developed a modern single-page application (SPA)
-          prototype using Next.js framework to explore component-based
-          architecture and server-side rendering (SSR) concepts. Styled
-          application with Tailwind CSS for rapid UI development and a fully
-          responsive design.
-        </p>
-        <div class="tech-stack">
-          <span class="tech-badge">Next.js</span>
-          <span class="tech-badge">C#</span>
-          <span class="tech-badge">MySQL</span>
-          <span class="tech-badge">Tailwind CSS</span>
-          <span class="tech-badge">JavaScript</span>
-          <span class="tech-badge">HTML/CSS</span>
+      <!-- Projects Filters -->
+      <div class="projects-filters">
+        <div class="filter-group">
+          <span class="filter-label">Filter by Technology:</span>
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">C#/.NET</button>
+          <button class="filter-btn">JavaScript</button>
+          <button class="filter-btn">Web Apps</button>
+          <button class="filter-btn">Database</button>
         </div>
       </div>
 
-      <div class="project-card">
-        <h3>Agent Admin Management System</h3>
-        <p>
-          Agent Admin Management System for Travel Experts, allowing internal
-          staff to manage agents, packages, and suppliers. Standardized UI
-          components and database field naming conventions across both front-end
-          and admin systems.
-        </p>
-        <div class="tech-stack">
-          <span class="tech-badge">C#</span>
-          <span class="tech-badge">.NET</span>
-          <span class="tech-badge">SSMS</span>
-          <span class="tech-badge">JavaScript</span>
-          <span class="tech-badge">HTML/CSS</span>
+      <!-- Projects Section -->
+      <div class="section-card">
+        <h2 class="section-title">
+          <i class="fas fa-code me-2"></i> Featured Projects
+        </h2>
+
+        <div class="project-card">
+          <h3>Travel Booking Portal</h3>
+          <p>
+            Developed a full-featured travel booking portal with user
+            authentication, package management, and a responsive front-end. This
+            project demonstrates end-to-end full-stack development capabilities.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">HTML/CSS</span>
+            <span class="tech-badge">Entity Framework</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://travel-booking-portal.onrender.com" target="_blank"
+              >View Website</a
+            >
+            <span>|</span>
+            <a
+              href="https://github.com/Xavier030/Travel-Booking-Portal"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
         </div>
-        <div class="project-actions">
-          <a href="https://thread-project-next.onrender.com" target="_blank"
-            >View Website</a
-          >
-          |
-          <a href="https://github.com/Aver030/thread-project" target="_blank"
-            >View Code</a
-          >
+
+        <div class="project-card">
+          <h3>Thread Project</h3>
+          <p>
+            Bootstrapped and developed a modern single-page application (SPA)
+            prototype using Next.js framework to explore component-based
+            architecture and server-side rendering (SSR) concepts. Styled
+            application with Tailwind CSS for rapid UI development and a fully
+            responsive design.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">HTML/CSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://thread-project-next.onrender.com" target="_blank"
+              >View Website</a
+            >
+            <span>|</span>
+            <a href="https://github.com/Aver030/thread-project" target="_blank"
+              >View Code</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Agent Admin Management System</h3>
+          <p>
+            Agent Admin Management System for Travel Experts, allowing internal
+            staff to manage agents, packages, and suppliers. Standardized UI
+            components and database field naming conventions across both
+            front-end and admin systems.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">.NET</span>
+            <span class="tech-badge">SSMS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">HTML/CSS</span>
+          </div>
+          <div class="project-actions">
+            <!-- <a href="./" target="_blank">View Code</a> -->
+          </div>
         </div>
       </div>
     </div>
