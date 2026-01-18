@@ -1,7 +1,5 @@
 # About Me - Li Shiyun
 
-![Li Shiyun's About Me Page](Screenshot%202026-01-17%20at%202.24.49 PM.png)
-
 ## Introduction
 
 This is my personal "About Me" website that showcases my professional background, skills, and portfolio. The website features a clean, modern design with a dark theme that highlights key information about me.
